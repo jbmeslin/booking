@@ -5,4 +5,8 @@ export const roomTypeDefs = gql`
     id: ID!
     name: String!
   }
+
+  type Query {
+    rooms: [Room]
+  }
 `;

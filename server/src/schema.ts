@@ -8,9 +8,10 @@ import PartnerResolvers from "./resolvers/partner/patnerResolver";
 import {roomTypeDefs} from "./resolvers/room/schema";
 import MeetingResolvers from "./resolvers/meeting/meetingResolver";
 import {meetingTypeDefs} from "./resolvers/meeting/schema";
+import RoomResolvers from "./resolvers/room/roomResolver";
 
 export const schema = makeExecutableSchema({
     typeDefs: [helloTypeDefs, roomTypeDefs, companyTypeDefs, partnerTypeDefs, meetingTypeDefs],
-    resolvers: [HelloResolvers, CompanyResolvers, PartnerResolvers, MeetingResolvers],
+    resolvers: [HelloResolvers, CompanyResolvers, PartnerResolvers, MeetingResolvers, RoomResolvers],
     //todo: add datasource
 });
